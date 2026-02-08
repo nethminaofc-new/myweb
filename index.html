@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaTopup | Fast Gaming Top-Ups</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#">Nexa<span>Topup</span></a>
+        <nav>
+          <a href="#games">Games</a>
+          <a href="#how">How to Buy</a>
+          <a href="#order">Order</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Trusted by 10,000+ gamers</p>
+            <h1>Instant Game Currency Top-Up, Anytime.</h1>
+            <p class="subtitle">
+              Buy Diamonds, UC, Genesis Crystals, and more in under 2 minutes.
+              Safe payment, fast process, and 24/7 support.
+            </p>
+            <a href="#order" class="btn">Top Up Now</a>
+          </div>
+          <div class="hero-card">
+            <h3>Why choose NexaTopup?</h3>
+            <ul>
+              <li>⚡ Auto process in minutes</li>
+              <li>🔒 Secure checkout</li>
+              <li>💳 E-wallet, bank, QRIS</li>
+              <li>🎮 Popular games available</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="section container">
+        <div class="section-head">
+          <h2>Popular Top-Up Games</h2>
+          <p>Select your game and package.</p>
+        </div>
+        <div id="gameGrid" class="game-grid"></div>
+      </section>
+
+      <section id="how" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>How to Top Up</h2>
+          </div>
+          <div class="steps">
+            <article>
+              <h3>1. Pick a game</h3>
+              <p>Choose your favorite game and denomination package.</p>
+            </article>
+            <article>
+              <h3>2. Enter your ID</h3>
+              <p>Input User ID and Zone ID (if required) carefully.</p>
+            </article>
+            <article>
+              <h3>3. Complete payment</h3>
+              <p>Finish payment and your currency will be sent instantly.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="section container">
+        <div class="section-head">
+          <h2>Place Your Order</h2>
+        </div>
+        <form id="orderForm" class="order-form">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Game
+            <select name="game" required>
+              <option value="">Select game</option>
+              <option>Mobile Legends</option>
+              <option>PUBG Mobile</option>
+              <option>Genshin Impact</option>
+              <option>Valorant</option>
+            </select>
+          </label>
+          <label>
+            User ID
+            <input type="text" name="userId" placeholder="e.g. 12345678" required />
+          </label>
+          <label>
+            Package
+            <select name="package" required>
+              <option value="">Select package</option>
+              <option>86 Diamonds / 60 UC / 300 VP</option>
+              <option>172 Diamonds / 325 UC / 600 VP</option>
+              <option>Weekly Pass / Monthly Pass</option>
+            </select>
+          </label>
+          <label>
+            Payment Method
+            <select name="payment" required>
+              <option value="">Select payment</option>
+              <option>QRIS</option>
+              <option>Bank Transfer</option>
+              <option>OVO / DANA / GoPay</option>
+            </select>
+          </label>
+          <button class="btn" type="submit">Confirm Order</button>
+        </form>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-wrap">
+        <p>© 2026 NexaTopup. All rights reserved.</p>
+        <p>Support: help@nexatopup.gg</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
