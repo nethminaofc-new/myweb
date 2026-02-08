@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaTopup | Fast Gaming Top Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <h1 class="logo">NovaTopup</h1>
+        <a href="#topup" class="btn btn-outline">Top Up Now</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="badge">Trusted by 10,000+ gamers</p>
+        <h2>Fast, Safe, and Affordable Gaming Top Ups</h2>
+        <p>
+          Recharge your favorite games in seconds. Instant delivery, secure
+          payment, and 24/7 support.
+        </p>
+        <a href="#topup" class="btn">Start Top Up</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="container section" id="games">
+        <h3>Popular Games</h3>
+        <div class="grid games-grid">
+          <article class="card">
+            <h4>Mobile Legends</h4>
+            <p>Diamonds from 86 to 1720+ with instant process.</p>
+          </article>
+          <article class="card">
+            <h4>Free Fire</h4>
+            <p>Top up diamonds quickly with the best local pricing.</p>
+          </article>
+          <article class="card">
+            <h4>Valorant</h4>
+            <p>Get VP instantly and unlock your dream bundle.</p>
+          </article>
+          <article class="card">
+            <h4>Genshin Impact</h4>
+            <p>Genesis Crystals and Welkin at competitive rates.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="topup">
+        <h3>Top Up Form</h3>
+        <form id="topupForm" class="form card">
+          <label>
+            Game
+            <select id="game" required>
+              <option value="">Select game</option>
+              <option value="Mobile Legends">Mobile Legends</option>
+              <option value="Free Fire">Free Fire</option>
+              <option value="Valorant">Valorant</option>
+              <option value="Genshin Impact">Genshin Impact</option>
+            </select>
+          </label>
+
+          <label>
+            User ID
+            <input id="userId" type="text" placeholder="Enter your game ID" required />
+          </label>
+
+          <label>
+            Package
+            <select id="package" required>
+              <option value="">Select package</option>
+              <option value="5">Small - $5</option>
+              <option value="10">Medium - $10</option>
+              <option value="20">Large - $20</option>
+              <option value="50">Pro - $50</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn">Pay & Process</button>
+          <p id="result" class="result" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="container section">
+        <h3>Why Choose NovaTopup?</h3>
+        <div class="grid features-grid">
+          <article class="card"><strong>Instant Delivery</strong><p>Orders processed in under a minute.</p></article>
+          <article class="card"><strong>Secure Payments</strong><p>Safe checkout with reliable gateways.</p></article>
+          <article class="card"><strong>24/7 Support</strong><p>Our support team is always online.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> NovaTopup. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
